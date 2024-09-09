@@ -18,6 +18,7 @@ console.log(numbers);
 
 
 //! Sulotion 2 : Using the sort() method with a comparison function to sort in descending order
+
 let Numbers = [4, 2, 0, 9];
 
 Numbers.sort((a, b) => b - a);
