@@ -1,13 +1,15 @@
-//tri par bulle
-let table = [3, 5, 1, 0, 8];
-let temp = '';
-for (j = 0; j < table.length; j++) {
-    for (i = 0; i < table.length; i++) {
-        if (table[i] > table[i + 1]) {
-            temp = table[i];
-            table[i] = table[i + 1];
-            table[i + 1] = temp;
+// Tri  a bulle
+let numbers = [3, 5, 1, 0, 8];
+let tmp;
+
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers.length - 1; j++) {
+        if (numbers[j] > numbers[j + 1]) {
+            tmp = numbers[j];
+            numbers[j] = numbers[j + 1];
+            numbers[j + 1] = tmp;
         }
     }
 }
-console.log("Sorted Array:", table);
+
+console.log("Tableau trié:", numbers);
