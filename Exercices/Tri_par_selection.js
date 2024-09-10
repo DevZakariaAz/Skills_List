@@ -15,13 +15,3 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(numbers);
 //* Output: [9, 4, 2, 0]
-
-
-//! Sulotion 2 : Using the sort() method with a comparison function to sort in descending order
-
-let Numbers = [4, 2, 0, 9];
-
-Numbers.sort((a, b) => b - a);
-// ex a=4 b=2 a<b = 4 < 2 = true 
-console.log(Numbers);
-//* Output: [9, 4, 2, 0]
